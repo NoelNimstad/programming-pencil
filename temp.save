@@ -1,0 +1,42 @@
+html:
+<button id="button">hello there</button> 
+
+css:
+body
+{
+	background-color: #43e06b;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.5s ease background-color;
+}
+
+button
+{
+	background-color: white;
+	border: none;
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: box-shadow 0.2s ease;
+}
+
+button:hover 
+{
+	box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+js:
+let colors = ["#43e06b", "#e04343", "#4372e0", "#e0c643"];
+let index = 0;
+
+const button = document.getElementById("button");
+button.addEventListener("click", () => 
+{
+	index = ++index % 4;
+	document.body.style.backgroundColor = colors[index];
+});

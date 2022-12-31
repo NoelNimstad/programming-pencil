@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="editors" id="editors">
+                <textarea class="editor html">html</textarea>
+                <textarea class="editor css">css</textarea>
+                <textarea class="editor js">js</textarea>
+                <button id="download" class="action-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 100 120" fill="none">
+                        <path d="M0 10C0 4.47715 4.47715 0 10 0H76.0842C78.6017 0 81.0265 0.94953 82.8746 2.65901L96.7904 15.5311C98.8366 17.4239 100 20.0848 100 22.8721V110C100 115.523 95.5228 120 90 120H10C4.47716 120 0 115.523 0 110V10Z" fill="white"/>
+                        <rect x="10" y="11" width="70" height="22" rx="5" fill="#2990F1"/>
+                        <rect x="33" y="50" width="35" height="35" rx="17.5" fill="#2990F1"/>
+                    </svg>
+                </button>
+                <button id="load-file" class="action-button action-button-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="122" height="101" viewBox="0 0 122 101" fill="none">
+                        <path d="M5.5 13.5H92C95.5899 13.5 98.5 16.4102 98.5 20V90C98.5 93.5899 95.5899 96.5 92 96.5H12C8.41015 96.5 5.5 93.5899 5.5 90V13.5Z" fill="#2990F1" stroke="white" stroke-width="7"/>
+                        <path d="M19.4322 32.2612C20.656 27.964 24.5818 25 29.0499 25H108.255C114.895 25 119.691 31.3525 117.872 37.7388L102.068 93.2388C100.844 97.536 96.9182 100.5 92.4501 100.5H13.2452C6.6051 100.5 1.809 94.1475 3.6276 87.7612L19.4322 32.2612Z" fill="white"/>
+                        <path d="M2 10C2 4.47715 6.47715 0 12 0H42C47.5228 0 52 4.47715 52 10V15H2V10Z" fill="white"/>
+                    </svg>
+                </button>
+            </section>
+            <section class="results" id="results">
+                <iframe id="window"></iframe>
+            </section>
+            <button class="fullscreen" id="fullscreen">
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="89" viewBox="0 0 88 89" fill="none">
+                    <path d="M3 1.5H1.5V3V13V14.5V33V34.5H3H13H14.5V33V14.5H33H34.5V13V3V1.5H33H14.5H13H3Z" fill="black" stroke="white" stroke-width="3"/>
+                    <path d="M86.5 3V1.5H85L75 1.5H73.5L55 1.5L53.5 1.5V3V13V14.5H55L73.5 14.5V33V34.5H75H85H86.5V33V14.5V13V3Z" fill="black" stroke="white" stroke-width="3"/>
+                    <path d="M85 87.5H86.5V86L86.5 76V74.5L86.5 56V54.5H85L75 54.5H73.5V56L73.5 74.5L55 74.5H53.5V76L53.5 86V87.5H55L73.5 87.5H75L85 87.5Z" fill="black" stroke="white" stroke-width="3"/>
+                    <path d="M1.5 86L1.5 87.5H3L13 87.5H14.5L33 87.5H34.5V86L34.5 76V74.5H33L14.5 74.5L14.5 56L14.5 54.5H13L3 54.5H1.5L1.5 56L1.5 74.5L1.5 76L1.5 86Z" fill="black" stroke="white" stroke-width="3"/>
+                </svg>
+            </button>
+        </main>
+        <input type="file" id="file-selector" accept=".html"/>
+    </body>
+</html>
