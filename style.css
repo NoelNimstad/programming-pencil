@@ -1,0 +1,103 @@
+body 
+{
+    margin: 0;
+}
+
+main 
+{
+    display: flex;
+}
+
+section
+{
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#window 
+{
+    width: 50vw;
+    height: 100vh;
+    padding: 0;
+    border: none;
+}
+
+.editors 
+{
+    background-color: black;
+}
+
+textarea
+{
+    border: none;
+    width: calc(50vw - 2rem);
+    background-color: black;
+    resize: vertical;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    outline: none;
+    cursor: text;
+    border-bottom: 0.2rem dashed #222;
+    tab-size: 4;
+}
+
+.html { border-color: #e34c26; }
+.css { border-color: #2965f1; }
+.js { border-color: #f7df1e; }
+
+.fullscreen
+{
+    cursor: pointer;
+    position: absolute;
+    right: 1rem; top: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fullscreen > svg 
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.action-button
+{
+    position: absolute;
+    right: calc(50vw + 1rem);
+    bottom: 1rem;
+    background-color: #2990f1;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button > svg
+{
+    height: 2.5rem;
+}
+
+.action-button-2
+{
+    bottom: 5.5rem;
+}
+
+.action-button-2 > svg 
+{
+    width: 2.5rem;
+    height: auto;
+}
+
+#file-selector
+{
+    display: none;
+}
